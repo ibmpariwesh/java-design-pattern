@@ -9,9 +9,10 @@ package com.hundredwordsgof.chainofresponsibility;
 public class FirstSlabHandler extends Handler {
 
 	public float handleRequest(Salary salary) {
-
+		
 		// if some condition call handleRequest on successor
 		if (salary.getAmount() > 500000) {
+			succesor = new SecondSlabHandler();
 			return succesor.handleRequest(salary);
 		} else {
 			return 0;
