@@ -1,10 +1,5 @@
 package com.hundredwordsgof.factorymethod;
 
-/**
- * 
- * ConcreteCreator class returns an instance of the ConcreteProduct
- *
- */
 public class ConcreteCreator extends Creator {
 
   public Product factoryMethod(String type) {

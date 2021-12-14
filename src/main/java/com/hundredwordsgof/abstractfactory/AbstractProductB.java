@@ -5,6 +5,10 @@ package com.hundredwordsgof.abstractfactory;
  * AbstractProductB, define interface for ProductB objects
  * 
  */
-abstract class AbstractProductB {
+interface AbstractProductB {
+	void buy();
+	default public void setPrice() {
+		// TODO Auto-generated method stub
 
+	}
 }
